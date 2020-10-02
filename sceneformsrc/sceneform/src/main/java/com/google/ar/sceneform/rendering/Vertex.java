@@ -1,6 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.math.Vector3;
 
 /**
@@ -26,7 +27,8 @@ public class Vertex {
   private final Vector3 position = Vector3.zero();
 
   // Optional.
-  @Nullable private Vector3 normal;
+  @Nullable
+  private Vector3 normal;
   @Nullable private UvCoordinate uvCoordinate;
   @Nullable private Color color;
 

@@ -3,8 +3,10 @@ package com.google.ar.sceneform.rendering;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+
 import com.google.android.filament.MaterialInstance;
 
 
@@ -26,7 +28,8 @@ public class Material {
   private static final String TAG = Material.class.getSimpleName();
 
   private final MaterialParameters materialParameters = new MaterialParameters();
-  @Nullable private final MaterialInternalData materialData;
+  @Nullable
+  private final MaterialInternalData materialData;
   private final IMaterialInstance internalMaterialInstance;
 
   /**

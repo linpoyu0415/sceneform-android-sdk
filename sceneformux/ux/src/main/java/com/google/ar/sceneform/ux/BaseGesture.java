@@ -15,8 +15,10 @@
  */
 package com.google.ar.sceneform.ux;
 
-import android.support.annotation.Nullable;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.HitTestResult;
 import com.google.ar.sceneform.Node;
 
@@ -43,7 +45,8 @@ public abstract class BaseGesture<T extends BaseGesture<T>> {
   private boolean hasFinished;
   private boolean wasCancelled;
 
-  @Nullable protected Node targetNode;
+  @Nullable
+  protected Node targetNode;
   @Nullable private OnGestureEventListener<T> eventListener;
 
   public BaseGesture(GesturePointersUtility gesturePointersUtility) {

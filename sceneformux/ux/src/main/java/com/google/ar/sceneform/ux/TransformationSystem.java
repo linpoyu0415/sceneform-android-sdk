@@ -15,9 +15,11 @@
  */
 package com.google.ar.sceneform.ux;
 
-import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.HitTestResult;
 import java.util.ArrayList;
 
@@ -39,7 +41,8 @@ public class TransformationSystem {
 
   private SelectionVisualizer selectionVisualizer;
 
-  @Nullable private BaseTransformableNode selectedNode;
+  @Nullable
+  private BaseTransformableNode selectedNode;
 
   @SuppressWarnings("initialization")
   public TransformationSystem(

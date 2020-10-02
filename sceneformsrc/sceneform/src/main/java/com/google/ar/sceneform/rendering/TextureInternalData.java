@@ -1,6 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.core.annotations.UsedByNative;
 import com.google.ar.sceneform.resources.SharedReference;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
@@ -13,7 +14,8 @@ import com.google.ar.sceneform.utilities.AndroidPreconditions;
  */
 @UsedByNative("material_java_wrappers.h")
 public class TextureInternalData extends SharedReference {
-  @Nullable private com.google.android.filament.Texture filamentTexture;
+  @Nullable
+  private com.google.android.filament.Texture filamentTexture;
 
   private final Texture.Sampler sampler;
 

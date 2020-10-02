@@ -1,6 +1,7 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
 
 /**
@@ -8,7 +9,8 @@ import com.google.ar.sceneform.utilities.AndroidPreconditions;
  * all {@link Material}s using this data are finalized.
  */
 class MaterialInternalDataImpl extends MaterialInternalData {
-  @Nullable private com.google.android.filament.Material filamentMaterial;
+  @Nullable
+  private com.google.android.filament.Material filamentMaterial;
 
   MaterialInternalDataImpl(com.google.android.filament.Material filamentMaterial) {
     this.filamentMaterial = filamentMaterial;

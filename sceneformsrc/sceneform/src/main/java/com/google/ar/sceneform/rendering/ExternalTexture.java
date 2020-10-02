@@ -1,8 +1,10 @@
 package com.google.ar.sceneform.rendering;
 
 import android.graphics.SurfaceTexture;
-import android.support.annotation.Nullable;
 import android.view.Surface;
+
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.Stream;
 import com.google.ar.sceneform.utilities.AndroidPreconditions;
 import com.google.ar.sceneform.utilities.Preconditions;
@@ -20,7 +22,8 @@ import com.google.ar.sceneform.utilities.Preconditions;
 public class ExternalTexture {
   private static final String TAG = ExternalTexture.class.getSimpleName();
 
-  @Nullable private final SurfaceTexture surfaceTexture;
+  @Nullable
+  private final SurfaceTexture surfaceTexture;
   @Nullable private final Surface surface;
 
   @Nullable private com.google.android.filament.Texture filamentTexture;

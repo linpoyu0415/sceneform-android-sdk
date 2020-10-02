@@ -3,12 +3,14 @@ package com.google.ar.sceneform;
 import android.content.Context;
 import android.media.Image;
 
-import android.support.annotation.Nullable;
-import android.support.annotation.UiThread;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.UiThread;
+
 import com.google.ar.core.Anchor;
 import com.google.ar.core.CameraConfig.FacingDirection;
 import com.google.ar.core.Config;
@@ -56,7 +58,8 @@ public class ArSceneView extends SceneView {
   private static final float RECREATE_LIGHTING_ANCHOR_DISTANCE = 0.5f;
 
   private int cameraTextureId;
-  @Nullable private Session session;
+  @Nullable
+  private Session session;
   @Nullable private Frame currentFrame;
   @Nullable private Config cachedConfig;
   private int minArCoreVersionCode;

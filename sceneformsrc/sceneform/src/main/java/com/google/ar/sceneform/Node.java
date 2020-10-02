@@ -1,8 +1,9 @@
 package com.google.ar.sceneform;
 
-import android.support.annotation.Nullable;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
+
+import androidx.annotation.Nullable;
 
 import com.google.ar.sceneform.collision.Collider;
 import com.google.ar.sceneform.collision.CollisionShape;
@@ -152,7 +153,8 @@ public class Node extends NodeParent implements TransformProvider {
   private static final int LOCAL_DIRTY_FLAGS = LOCAL_TRANSFORM_DIRTY | WORLD_DIRTY_FLAGS;
 
   // Scene Graph fields.
-  @Nullable private Scene scene;
+  @Nullable
+  private Scene scene;
   // Stores the parent as a node (if the parent is a node) to avoid casting.
   @Nullable private Node parentAsNode;
 

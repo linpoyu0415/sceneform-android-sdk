@@ -5,8 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Image;
 import android.net.Uri;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.IndirectLight;
 import com.google.android.filament.Texture;
 
@@ -101,7 +103,8 @@ public class LightProbe {
   };
 
   private ByteBuffer cubemapBuffer = ByteBuffer.allocate(10000);
-  @Nullable private Texture reflectCubemap = null;
+  @Nullable
+  private Texture reflectCubemap = null;
   private final Color colorCorrection = new Color(1f, 1f, 1f);
   private final Color ambientColor = new Color();
   private float[] irradianceData;

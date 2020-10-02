@@ -61,7 +61,8 @@ public class ArFragment extends BaseArFragment {
       message = "Failed to create AR session";
     }
     Log.e(TAG, "Error: " + message, sessionException);
-    Toast.makeText(requireActivity(), message, Toast.LENGTH_LONG).show();
+//    Toast.makeText(getrequireActivity(), message, Toast.LENGTH_LONG).show();
+    Toast.makeText(null, message, Toast.LENGTH_LONG).show();
   }
 
   @Override

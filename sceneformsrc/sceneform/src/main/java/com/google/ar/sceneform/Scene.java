@@ -1,10 +1,11 @@
 package com.google.ar.sceneform;
 
 import android.media.Image;
-import android.support.annotation.Nullable;
-import android.support.annotation.VisibleForTesting;
 import android.util.Log;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 import com.google.ar.sceneform.collision.Collider;
 import com.google.ar.sceneform.collision.CollisionSystem;
@@ -87,7 +88,8 @@ public class Scene extends NodeParent {
       EnvironmentalHdrParameters.makeDefault();
 
   private final Camera camera;
-  @Nullable private final Sun sunlightNode;
+  @Nullable
+  private final Sun sunlightNode;
   @Nullable private final SceneView view;
   @Nullable private LightProbe lightProbe;
   private boolean lightProbeSet = false;

@@ -1,7 +1,7 @@
 package com.google.ar.sceneform.utilities;
 
-import android.support.annotation.Nullable;
-import android.support.annotation.VisibleForTesting;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * Used to track a {@link MovingAverage} that represents the number of milliseconds that elapse
@@ -23,7 +23,8 @@ public class MovingAverageMillisecondsTracker {
     }
   }
 
-  @Nullable private MovingAverage movingAverage;
+  @Nullable
+  private MovingAverage movingAverage;
   private final double weight;
   private final Clock clock;
   private long beginSampleTimestampNano;

@@ -15,7 +15,8 @@
  */
 package com.google.ar.sceneform.ux;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.core.Anchor;
 import com.google.ar.core.Camera;
 import com.google.ar.core.Frame;
@@ -42,7 +43,8 @@ import java.util.List;
  * when the {@link DragGesture} starts.
  */
 public class TranslationController extends BaseTransformationController<DragGesture> {
-  @Nullable private HitResult lastArHitResult;
+  @Nullable
+  private HitResult lastArHitResult;
   @Nullable private Vector3 desiredLocalPosition;
   @Nullable private Quaternion desiredLocalRotation;
 

@@ -1,7 +1,9 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.Entity;
 import com.google.android.filament.EntityManager;
 import com.google.android.filament.LightManager;
@@ -27,7 +29,8 @@ public class LightInstance {
 
   private @Entity final int entity;
   private final Light light;
-  @Nullable private Renderer renderer;
+  @Nullable
+  private Renderer renderer;
 
   @Nullable private TransformProvider transformProvider = null;
 

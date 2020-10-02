@@ -15,8 +15,9 @@
  */
 package com.google.ar.sceneform.ux;
 
-import android.support.annotation.CallSuper;
-import android.support.annotation.Nullable;
+import androidx.annotation.CallSuper;
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.FrameTime;
 import com.google.ar.sceneform.Node;
 
@@ -33,7 +34,8 @@ public abstract class BaseTransformationController<T extends BaseGesture<T>>
   private final BaseTransformableNode transformableNode;
   private final BaseGestureRecognizer<T> gestureRecognizer;
 
-  @Nullable private T activeGesture;
+  @Nullable
+  private T activeGesture;
   private boolean enabled;
   private boolean activeAndEnabled;
 

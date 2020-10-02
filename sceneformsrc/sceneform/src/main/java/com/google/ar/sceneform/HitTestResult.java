@@ -1,6 +1,7 @@
 package com.google.ar.sceneform;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+
 import com.google.ar.sceneform.collision.RayHit;
 
 /**
@@ -8,7 +9,8 @@ import com.google.ar.sceneform.collision.RayHit;
  * by the hit test, and associated information.
  */
 public class HitTestResult extends RayHit {
-  @Nullable private Node node;
+  @Nullable
+  private Node node;
 
   /** @hide */
   @SuppressWarnings("initialization") // Suppress @UnderInitialization warning.

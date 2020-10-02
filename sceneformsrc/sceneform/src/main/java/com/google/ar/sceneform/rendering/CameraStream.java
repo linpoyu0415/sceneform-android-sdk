@@ -1,7 +1,9 @@
 package com.google.ar.sceneform.rendering;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.EntityManager;
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.IndexBuffer.Builder.IndexType;
@@ -54,7 +56,8 @@ public class CameraStream {
   private final FloatBuffer cameraUvCoords;
   private final FloatBuffer transformedCameraUvCoords;
 
-  @Nullable private ExternalTexture cameraTexture;
+  @Nullable
+  private ExternalTexture cameraTexture;
 
   @Nullable private Material defaultCameraMaterial = null;
   @Nullable private Material cameraMaterial = null;

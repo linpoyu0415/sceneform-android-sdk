@@ -1,7 +1,9 @@
 package com.google.ar.sceneform;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+
 import com.google.ar.core.Anchor;
 import com.google.ar.core.Pose;
 import com.google.ar.core.TrackingState;
@@ -19,7 +21,8 @@ public class AnchorNode extends Node {
   private static final String TAG = AnchorNode.class.getSimpleName();
 
   // The anchor that the node is following.
-  @Nullable private Anchor anchor;
+  @Nullable
+  private Anchor anchor;
 
   // Determines if the movement between the node's current position and the anchor position should
   // be smoothed over time or immediate.

@@ -1,8 +1,10 @@
 package com.google.ar.sceneform.rendering;
 
 import android.net.Uri;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+
 import com.google.android.filament.IndexBuffer;
 import com.google.android.filament.TextureSampler;
 import com.google.android.filament.VertexBuffer;
@@ -54,7 +56,8 @@ import java.util.concurrent.CompletionException;
 class LoadRenderableFromSfbTask<T extends Renderable> {
   private static class ModelTexture {
     String name;
-    @Nullable Texture data;
+    @Nullable
+    Texture data;
 
     ModelTexture(String name) {
       this.name = name;
